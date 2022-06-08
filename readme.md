@@ -182,7 +182,7 @@ sudo make ssh
 
 4. place the ssh-certificates into the client folder
 
-5. change Caddyfile
+5. change Caddyfile URL
 
 ```js
 URL {
