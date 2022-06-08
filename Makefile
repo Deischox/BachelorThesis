@@ -33,10 +33,10 @@ stop:
 
 ### REMOTE
 
-SSH_STRING_UNI:=user@ip
+SSH_STRING_SERVER:=user@ip
 
-ssh-uni:
-	ssh $(SSH_STRING_UNI)
+ssh:
+	ssh $(SSH_STRING_SERVER)
 
 copy-files-uni:
-	scp -r ./* $(SSH_STRING_UNI):~/
+	scp -r ./* $(SSH_STRING_SERVER):~/

@@ -137,22 +137,27 @@ Install latest version of npm.
 3. edit .env for client
 
 ```js
-MONGO_URI=
-VIDEO_SAVE_PATH=
-ADMIN_USERNAME=
-ADMIN_PASSWORD=
-HTTPS=
+REACT_APP_API_BASE=
+REACT_APP_SOCKET_IO_BASE=
+REACT_APP_WEBSITE=
+REACT_APP_INTERVIEW_TIME=
 ```
 
 4. edit .env for server
 
 ```js
-REACT_APP_API_BASE=
-REACT_APP_SOCKET_IO_BASE=
-REACT_APP_INTERVIEW_TIME=
+MONGO_URI=
+HTTPS=
+REACT_URL=
 ```
 
-5. Change the [consent](https://github.com/Deischox/Online_Meeting_Analytic_Website/blob/master/client/src/utils/files/text.json) text file
+5. edit Makefile
+
+```js
+SSH_STRING_SERVER:=user@ip
+```
+
+6. Change the [consent](https://github.com/Deischox/Online_Meeting_Analytic_Website/blob/master/client/src/utils/files/text.json) text file
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- USAGE EXAMPLES -->
