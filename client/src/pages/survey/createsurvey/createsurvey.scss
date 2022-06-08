@@ -1,0 +1,70 @@
+.createsurvey{
+    display: flex;
+
+    .createsurveyContainer{
+        margin: 50px;
+        flex: 6;
+        display: flex;
+        flex-direction: column;
+
+        .top{
+            flex: 1;
+
+            .title {
+                font-weight: bold;
+                font-size: 32px;
+                color: rgb(160, 160, 160);
+              }
+        }
+
+        .middle{
+            flex: 6;
+
+            .surveyTitle{
+                margin-left: 10px;
+            }
+
+            .questionContainer{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                .questionForm{
+                    display: flex;
+                    .question{
+                        margin: 10px;
+                        padding-right: 25px;
+                        align-items: center;
+                        display: flex;
+                        flex-direction: row;
+
+                        .answersContainer{
+                            display: flex;
+                        }
+                    }
+                }
+            }
+
+            .deleteButton{
+                height: 80%;
+            }
+
+            .button{
+                margin-left: 20px;
+            }
+            }
+        }
+
+        .bottom{
+            flex: 1;
+            display: flex;
+            margin-top: 20px;
+
+            .buttonContainer{
+                margin-left: 20px;
+                .button{
+                    margin-right: 20px;
+                }
+            }
+
+        }
+    }

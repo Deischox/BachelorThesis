@@ -1,0 +1,18 @@
+.meetings {
+  display: flex;
+  height: 90vh;
+
+  .meetingsContainer {
+    flex: 6;
+    margin: 50px;
+    display: flex;
+
+    .left {
+      flex: 1;
+    }
+
+    .right {
+      flex: 1;
+    }
+  }
+}

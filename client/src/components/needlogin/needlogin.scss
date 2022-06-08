@@ -1,0 +1,11 @@
+.needLogin{
+    display: flex;
+
+    .needLoginContainer{
+        flex:6;
+        margin: 50px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+}

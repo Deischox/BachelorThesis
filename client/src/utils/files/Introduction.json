@@ -1,0 +1,43 @@
+{
+    "title": "Introduction",
+    "logoPosition": "right",
+    "pages": [
+     {
+      "name": "page1",
+      "elements": [
+       {
+        "type": "text",
+        "name": "ID",
+        "title": "Participant ID",
+        "isRequired": true
+       },
+       {
+        "type": "dropdown",
+        "name": "Gender",
+        "title": "Gender",
+        "choices": [
+         "Male",
+         "Female",
+         "Non-binary",
+         "Transgender",
+         "Intersex",
+         {
+          "value": "No",
+          "text": "I prefer not to say"
+         }
+        ]
+       },
+       {
+        "type": "text",
+        "name": "Age",
+        "title": "Age"
+       },
+       {
+        "type": "text",
+        "name": "Nationality",
+        "title": "Nationality"
+       }
+      ]
+     }
+    ]
+   }

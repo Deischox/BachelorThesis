@@ -1,0 +1,10 @@
+GET https://localhost:5000/videos
+
+###
+POST https://localhost:5000/register
+content-type: application/json
+
+{
+    "username": "Silas",
+    "password": "123"
+}

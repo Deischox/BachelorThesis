@@ -1,0 +1,4 @@
+<html>
+    <h1>A User booked a meeting</h1>
+    <p>TIME_SLOT</p>
+</html>

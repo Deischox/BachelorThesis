@@ -1,0 +1,16 @@
+.surveyresults {
+  display: flex;
+
+  .surveyresultsContainer {
+    flex: 6;
+    margin: 50px;
+    .buttonContainer{
+      justify-content: flex-end;
+      display: flex;
+      .button{
+        align-items: flex-end;
+        margin: 10px 0px 10px 10px;
+      }
+    }
+  }
+}

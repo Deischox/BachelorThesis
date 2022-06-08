@@ -1,0 +1,29 @@
+{
+    "title": "Booking",
+    "logoPosition": "right",
+    "pages": [
+     {
+      "name": "page1",
+      "elements": [
+       {
+        "type": "text",
+        "name": "id",
+        "title" : "Participant ID",
+        "isRequired": true
+       },
+       {
+        "type": "text",
+        "name": "email",
+        "title" : "Email",
+        "isRequired": true
+       },
+       {
+        "type": "dropdown",
+        "name": "slot",
+        "title" : "Time Slot",
+        "isRequired": true
+       }
+      ]
+     }
+    ]
+   }

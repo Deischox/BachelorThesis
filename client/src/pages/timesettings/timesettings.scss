@@ -1,0 +1,22 @@
+.timesettings {
+  display: flex;
+
+  .timesettingsContainer {
+    flex: 6;
+    margin: 50px;
+
+    .title {
+      font-weight: bold;
+      font-size: 32px;
+      color: rgb(160, 160, 160);
+      margin: 20px;
+    }
+
+    .info {
+      font-weight: 500;
+      font-size: 16px;
+      color: rgb(31, 31, 31);
+      margin: 20px;
+    }
+  }
+}

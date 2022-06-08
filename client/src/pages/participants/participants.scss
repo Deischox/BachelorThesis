@@ -1,0 +1,16 @@
+.participants {
+  display: flex;
+
+  .participantsContainer {
+    flex: 6;
+    margin: 50px;
+    height: 600px;
+
+    .buttonContainer{
+      display: flex;
+      align-items: flex-end;
+      flex-direction: column;
+      margin-bottom: 10px;
+    }
+  }
+}

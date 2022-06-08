@@ -1,0 +1,43 @@
+version: "3"
+services:
+  react-app:
+    image: react-app-production:${ENV}
+    container_name: "react-app"
+    restart: unless-stopped
+    stdin_open: true
+    ports:
+      - "3050:3050"
+    networks:
+      - mern-app
+    volumes:
+      - caddy-data:/data
+      - caddy-config:/config
+  api-server:
+    image: api-server
+    container_name: "api-server"
+    restart: unless-stopped
+    env_file: ./server/config/${ENV}.env
+    ports:
+      - "5000:5000"
+    networks:
+      - mern-app
+    depends_on:
+      - mongo
+    volumes:
+      - ./videos:/usr/src/app/videos/
+  mongo:
+    image: mongo:4.4.13
+    ports:
+      - "27017:27017"
+    networks:
+      - mern-app
+networks:
+  mern-app:
+    driver: bridge
+volumes:
+  mongo-data:
+    driver: local
+  caddy-data:
+    driver: local
+  caddy-config:
+    driver: local

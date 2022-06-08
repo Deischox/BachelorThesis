@@ -1,0 +1,31 @@
+### First Stage
+FROM node:16.14 AS builder
+
+WORKDIR /usr/src/app
+
+COPY ./package.json ./
+
+RUN yarn install
+
+COPY . .
+
+ENV GENERATE_SOURCEMAP false
+
+RUN yarn build
+
+### Second Stage
+FROM caddy:2.4.6
+
+ARG CADDYFILE
+COPY ${CADDYFILE} /etc/caddy/Caddyfile
+
+COPY ./cert.pem ./
+
+COPY ./key.pem ./
+
+COPY --from=builder /usr/src/app/build/ /srv
+
+EXPOSE 3050
+
+
+
