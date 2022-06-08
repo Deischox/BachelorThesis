@@ -71,8 +71,6 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `Deischox`, `Online_Meeting_Analytic_Website`, `twitter_handle`, `linkedin_username`, `silas.ueberschaer@gmx.de_client`, `silas.ueberschaer@gmx.de`, `project_title`, `project_description`
-
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ### Built With
@@ -162,24 +160,37 @@ SSH_STRING_SERVER:=user@ip
 
 <!-- USAGE EXAMPLES -->
 
-## Usage
+## Deployment
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+1. clone repository
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+```js
+git clone https://github.com/Deischox/BachelorThesis.git
+```
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+2. inside the repository, copy all files to the server
 
-<!-- ROADMAP -->
+```js
+sudo make copy-files
+```
 
-## Roadmap
+3. ssh into the server
 
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-  - [ ] Nested Feature
+```js
+sudo make ssh
+```
 
-See the [open issues](https://github.com/Deischox/Online_Meeting_Analytic_Website/issues) for a full list of proposed features (and known issues).
+4. place the ssh-certificates into the client folder
+
+5. build and run docker container
+
+```js
+sudo make build-production
+```
+
+```js
+sudo make run-production
+```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
