@@ -182,6 +182,24 @@ sudo make ssh
 
 4. place the ssh-certificates into the client folder
 
+5. change Caddyfile
+
+```js
+URL {
+    tls cert.pem key.pem
+
+    handle_path /* {
+        root * /srv
+        try_files {path} {path} /index.html
+        file_server
+    }
+
+    handle_path /api/* {
+        reverse_proxy  api-server:5000
+    }
+}
+```
+
 5. build and run docker container
 
 ```js
